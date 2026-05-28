@@ -1,0 +1,66 @@
+/* ---- TABLETTE (max 768px) ---- */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  nav {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  /* Cacher les liens navbar sur mobile */
+  ul {
+    display: none;
+  }
+
+  /* Hero titre plus petit */
+  h1 {
+    font-size: 1.4rem !important;
+  }
+
+  /* Grille médicaments : 1 colonne */
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Stats : 1 colonne */
+  .statsGrid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Formulaire contact : 1 colonne */
+  .formRow {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Page créer compte : colonne */
+  .card {
+    flex-direction: column !important;
+    padding: 30px 20px !important;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column !important;
+    gap: 20px !important;
+    padding: 30px 20px !important;
+  }
+}
+
+/* ---- MOBILE (max 480px) ---- */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.1rem !important;
+  }
+
+  /* Catégories : 2 colonnes */
+  .categoriesGrid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Sections padding réduit */
+  section, div {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
